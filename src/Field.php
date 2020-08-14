@@ -139,8 +139,27 @@ class Field extends \craft\base\Field
 
         $js = <<<JS
 ClassicEditor
-    .create(document.getElementById('{$nsId}'), { "plugins": [ PasteFromOffice], "toolbar": {
-        "items": ["heading", "|", "bold", "italic", "link", "bulletedList", "numberedList", "imageUpload", "blockQuote", "insertTable", "mediaEmbed", "undo", "redo"]
+    .create(document.getElementById('{$nsId}'), { "plugins": [ PasteFromOffice], 
+        "toolbar": {
+        "items": ['heading',
+                        '|',
+                        'bold',
+                        'italic',
+                        'link',
+                        'bulletedList',
+                        'numberedList',
+                        '|',
+                        'indent',
+                        'outdent',
+                        '|',
+                        'imageUpload',
+                        'blockQuote',
+                        'insertTable',
+                        'mediaEmbed',
+                        'undo',
+                        'redo',
+                        'codeBlock',
+                        'code']
     },
     "image": {
         "toolbar": ["imageStyle:full", "imageStyle:side", "|", "imageTextAlternative"]
