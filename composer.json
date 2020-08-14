@@ -24,6 +24,7 @@
     "docs": "https://github.com/craftcms/ckeditor/blob/master/README.md",
     "rss": "https://github.com/craftcms/ckeditor/commits/master.atom"
   },
+
   "require": {
     "craftcms/cms": "^3.0.0-RC15"
   },
