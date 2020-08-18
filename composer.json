@@ -26,8 +26,7 @@
   },
 
   "require": {
-    "craftcms/cms": "^3.0.0-RC15",
-    "@ckeditor/ckeditor5-paste-from-office": "21.0.0"
+    "craftcms/cms": "^3.0.0-RC15"
   },
   "autoload": {
     "psr-4": {
