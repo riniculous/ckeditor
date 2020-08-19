@@ -19,6 +19,7 @@ class CkeditorAsset extends AssetBundle
     {
         $this->sourcePath = dirname(__DIR__, 3).'/lib/ckeditor/dist';
         $this->js = [
+            'ckeditor.js',
             'editor.js'
         ];
 

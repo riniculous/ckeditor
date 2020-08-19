@@ -138,8 +138,9 @@ class Field extends \craft\base\Field
         $encValue = htmlentities((string)$value, ENT_NOQUOTES, 'UTF-8');
 
         $js = <<<JS
-Editor
-    .create(document.getElementById('{$nsId}'), {
+
+ClassicEditor
+    .create(document.getElementById('{$nsId}'), 
         "toolbar": {
         "items": ['heading',
                         '|',
