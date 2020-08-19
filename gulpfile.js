@@ -8,10 +8,10 @@ var ckeditorPath = 'node_modules/@ckeditor';
 var libPath = 'lib';
 var fieldPath = 'src/assets/field/dist';
 
-gulp.task('ckeditor-classic', function() {
-    return gulp.src(ckeditorPath+'/ckeditor5-build-classic/build/*')
-        .pipe(gulp.dest(libPath+'/ckeditor/dist'));
-});
+// gulp.task('ckeditor-classic', function() {
+//     return gulp.src(ckeditorPath+'/ckeditor5-build-classic/build/*')
+//         .pipe(gulp.dest(libPath+'/ckeditor/dist'));
+// });
 
 gulp.task('craft-sass', function() {
     return gulp.src('node_modules/craftcms-sass/src/_mixins.scss')
@@ -30,6 +30,6 @@ gulp.task('field-css', function() {
         .pipe(gulp.dest(fieldPath+'/css'));
 });
 
-gulp.task('ckeditor', ['ckeditor-classic']);
+//gulp.task('ckeditor', ['ckeditor-classic']);
 gulp.task('field', ['field-css']);
 gulp.task('default', ['ckeditor', 'field']);
