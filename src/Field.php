@@ -138,10 +138,8 @@ class Field extends \craft\base\Field
         $encValue = htmlentities((string)$value, ENT_NOQUOTES, 'UTF-8');
 
         $js = <<<JS
-        import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
-
-ClassicEditor
-    .create(document.getElementById('{$nsId}'), { "plugins": [ PasteFromOffice], 
+Editor
+    .create(document.getElementById('{$nsId}'), {
         "toolbar": {
         "items": ['heading',
                         '|',
