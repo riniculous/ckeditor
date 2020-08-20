@@ -140,7 +140,7 @@ class Field extends \craft\base\Field
         $js = <<<JS
 
 ClassicEditor
-    .create(document.getElementById('{$nsId}'), 
+    .create(document.getElementById('{$nsId}'), { 
         "toolbar": {
         "items": ['heading',
                         '|',
